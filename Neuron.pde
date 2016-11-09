@@ -11,7 +11,12 @@ class Neuron {
   
   void printWeights() {
     for(int i = 0; i < mOutputWeights.length; i++){
-       println(mOutputWeights[i]);
+       print(mOutputWeights[i], " ");
     }
+     println();
+  }
+  
+  float getWeight(int numWeight) {
+    return mOutputWeights[numWeight];
   }
 }
